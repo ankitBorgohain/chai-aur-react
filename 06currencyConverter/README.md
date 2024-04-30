@@ -1,6 +1,12 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Currency Converter : An app to convert currencies.
+
+
+This is a project Using React Vite Bundler.
+This app depicts the working of various hooks, api and their use-cases.
+
+
 
 Currently, two official plugins are available:
 
