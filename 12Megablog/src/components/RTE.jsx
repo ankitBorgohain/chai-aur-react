@@ -9,15 +9,18 @@ export default function RTE({name, control, label, defaultValue=""}) {
     {label}
     </label>}
 
+
+    //tiny mce needs to get separate api key to work
     <Controller 
         name={name || "content"}
         control={control}
         render={({field: {onChange}})=>(
             <Editor 
+            apiKey='fx2qi973u9oznayd1rkm8bj30cu0hle2b109si54f3upst16'
                 initialValue={defaultValue}
                 init={{
                     height:500,
-                    menubar: false,
+                    menubar: true,
                     plugins: [
                 "image",
                 "advlist",

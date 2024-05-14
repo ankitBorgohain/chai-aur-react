@@ -1,7 +1,7 @@
 import React from 'react'
-import {Container, PostForm} from "../../components"
+import {Container, PostForm} from "../index"
 
-function AddPosts() {
+function AddPost() {
   return (
     <div className='py-8'>
         <Container>
@@ -11,4 +11,4 @@ function AddPosts() {
   )
 }
 
-export default AddPosts
+export default AddPost

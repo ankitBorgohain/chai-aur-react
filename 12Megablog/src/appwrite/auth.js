@@ -21,9 +21,9 @@ export class AuthService {
             //call another method
             //log in method on creation
             return this.login({email, password})
-            return userAccount;
+            
            }else{
-            return "failed to create"
+            return userAccount;
            }
         } catch (error) {
             throw(error);
@@ -34,10 +34,10 @@ export class AuthService {
     async login ({email, password}){
 
         try {
-            return await this.account.createEmailSession(email, password)
+            return await this.account.createEmailPasswordSession(email, password)
 
         } catch (error) {
-            throw(error)
+            throw("Appwrite service :: login :: error",error)
         }
         
     }

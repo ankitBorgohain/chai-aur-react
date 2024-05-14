@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 export default function Protected({children, authentication=true}) {
 
     const navigate = useNavigate()
-    cosnt [loader, setLoader] =useState(true)
+    const [loader, setLoader] =useState(true)
     const authStatus = useSelector(state =>  state.auth.status)
  
     useEffect(() => {
